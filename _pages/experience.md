@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Experience"
+title: "Work Experience"
 permalink: /experience/
 author_profile: true
 ---

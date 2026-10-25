@@ -1,13 +1,26 @@
 ---
-layout: archive
-title: "Portfolio"
-permalink: /portfolio/
+layout: single
+title: "Publications"
+permalink: /research/
 author_profile: true
+redirect_from:
+  - /portfolio/
+excerpt: "Lakshman Shanmugam's research in financial time-series forecasting and lung disease detection."
 ---
 
-<p>My research publications in financial time-series forecasting and lung disease detection.</p>
+<p>Welcome to my research page!</p>
 
-{% include base_path %}
-{% for post in site.publications reversed %}
-  {% include archive-single.html %}
+<p>My interests span <strong>Artificial Intelligence, Machine Learning, and Natural Language Processing</strong>, with a focus on practical solutions for real-world challenges. My research explores <strong>financial time-series forecasting</strong> and <strong>healthcare AI</strong>, alongside my professional work on LLM-powered applications, agentic workflows, and retrieval systems.</p>
+
+<p>I have contributed to <strong>two journal publications</strong>, combining model development with experimental evaluation.</p>
+
+<hr>
+
+<h2>Recent Research</h2>
+
+{% for publication in site.publications reversed %}
+<section aria-labelledby="research-{{ forloop.index }}">
+  <h3 id="research-{{ forloop.index }}">{{ forloop.index }}. {{ publication.title }}</h3>
+  {{ publication.content | markdownify }}
+</section>
 {% endfor %}

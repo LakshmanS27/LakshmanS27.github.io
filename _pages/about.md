@@ -16,7 +16,7 @@ My work spans multi-agent evidence workflows, vulnerability management, medical 
 
 ## Research
 
-My two publications explore financial time-series forecasting with Temporally Adaptive Dropout LSTM and lung disease detection with an optimized multi-feature Gated MLP. [Explore my publications]({{ '/portfolio/' | relative_url }}).
+My two publications explore financial time-series forecasting with Temporally Adaptive Dropout LSTM and lung disease detection with an optimized multi-feature Gated MLP. [Explore my research]({{ '/research/' | relative_url }}).
 
 ## Technical skills
 
@@ -28,6 +28,6 @@ My two publications explore financial time-series forecasting with Temporally Ad
 
 ## Get in touch
 
-[Email](mailto:slakshman2004@gmail.com) · [LinkedIn](https://www.linkedin.com/in/lakshman-shanmugam-00bb42267/) · [GitHub](https://github.com/LakshmanS27)
+[Email](mailto:slakshman2004@gmail.com) Â· [LinkedIn](https://www.linkedin.com/in/lakshman-shanmugam-00bb42267/) Â· [GitHub](https://github.com/LakshmanS27)
 
-[View my resume]({{ '/cv/' | relative_url }}) · [Download resume (PDF)]({{ '/files/Lakshman_Resume_2026.pdf' | relative_url }})
+[View my resume]({{ '/cv/' | relative_url }}) Â· [Download resume (PDF)]({{ '/files/Lakshman_Resume_2026.pdf' | relative_url }})

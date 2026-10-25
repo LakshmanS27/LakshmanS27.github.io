@@ -12,6 +12,8 @@ share: false
 
 Published in **IEEE Access**, Volume 13, **2025**, and available in IEEE Xplore.
 
+#### Description
+
 Developed a novel lung disease detection model using a **Gated MLP** framework integrated with **Grey Wolf Optimization (GWO)** and multi-feature extraction: ResNet50, HOG, GLCM, MRWT, ViT, and SP-GNN.
 
 The model was enhanced with cumulative learning and recursive optimization, achieving **98% accuracy**.
