@@ -1,64 +1,40 @@
 ---
-layout: archive
-title: "CV"
+layout: single
+title: "Resume"
 permalink: /cv/
 author_profile: true
 redirect_from:
   - /resume
+  - /resume/
 ---
 
-{% include base_path %}
+[Download resume (PDF)]({{ '/files/Lakshman_Resume_2026.pdf' | relative_url }}){: .btn .btn--primary}
 
-Education
-======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+## Professional summary
 
-Work experience
-======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+AI/ML Engineer experienced in developing LLM-powered applications, agentic workflows, RAG systems, and machine learning solutions across cybersecurity, GRC, and healthcare. Proficient in Python, PyTorch, LangChain, LangGraph, NLP, and deep learning, with hands-on experience in API integration, intelligent automation, and AI application development.
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+## Technical skills
 
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+{% include resume/skills.md %}
 
-Publications
-======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+## Experience
+
+{% capture experience %}{% include resume/experience.md %}{% endcapture %}
+{{ experience | replace: "## ", "### " }}
+
+## Projects & Publications
+
+{% for publication in site.publications reversed %}
+### {{ publication.title }}
+
+{{ publication.content }}
+{% endfor %}
+
+## Education
+
+{% include resume/education.md %}
+
+## Contact
+
+[slakshman2004@gmail.com](mailto:slakshman2004@gmail.com) Â· [LinkedIn](https://www.linkedin.com/in/lakshman-shanmugam-00bb42267/) Â· [GitHub](https://github.com/LakshmanS27)

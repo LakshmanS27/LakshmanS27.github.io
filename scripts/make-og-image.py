@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate the default 1200x630 OG image for Academic Pages (academicpages.github.io).
+"""Generate the 1200x630 social preview for Lakshman Shanmugam.
 
 Pillow-only, byte-reproducible. Clean academic card matching the template:
 white ground, #36c link-blue accent (the site's favicon/icon color), the site's
@@ -32,6 +32,8 @@ def font(size, bold=False):
     p = os.path.join(FONT_DIR, name)
     if not os.path.exists(p):
         p = os.path.join(FONT_DIR, "LiberationSans-Bold.ttf" if bold else "LiberationSans-Regular.ttf")
+    if not os.path.exists(p):
+        p = os.path.join(FONT_DIR, "arialbd.ttf" if bold else "arial.ttf")
     return ImageFont.truetype(p, size)
 
 
@@ -43,38 +45,23 @@ def main():
     img = Image.new("RGB", (W, H), BG)
     d = ImageDraw.Draw(img)
 
-    f_title = font(72, bold=True)
+    f_title = font(56, bold=True)
     f_sub = font(36)
     f_pill = font(28, bold=True)
     f_domain = font(30, bold=True)
 
-    # Official site logo (top-right): composite the template's real favicon
-    logo_path = os.path.join(REPO_ROOT, "images", "favicon-512x512.png")
-    if os.path.exists(logo_path):
-        logo = Image.open(logo_path).convert("RGBA")
-        logo.thumbnail((210, 210), Image.Resampling.LANCZOS)
-        # Align the logo's top edge with the top of the "Academic Pages" title
-        # (title is drawn at y=32 below), per maintainer review.
-        img.paste(logo, (W - 210 - 70, 14), logo)
-    else:
-        # Fallback: simple graduation-cap motif if the favicon is missing
-        mx, my = W - 230, 130
-        d.polygon([(mx - 90, my), (mx, my - 55), (mx + 90, my), (mx, my + 55)], fill=BLUE)
-        d.polygon([(mx - 90, my), (mx, my + 55), (mx - 90, my + 110), (mx - 180, my + 55)], fill=(130, 160, 215))
-        d.polygon([(mx - 90, my + 110), (mx - 180, my + 55), (mx - 180, my + 110), (mx - 90, my + 165)], fill=(130, 160, 215))
-
     # Title + subtitle (left). Vertical rhythm: 44px padding above the title
     # matches the 44px padding below the footer domain chip (maintainer review
     # 2026-10-18). Content band 44..586 (542px) split into even 58px gaps.
-    d.text((70, 32), "Academic Pages", font=f_title, fill=DARK)
-    d.text((70, 164), "A Jekyll theme for academic", font=f_sub, fill=GREY)
-    d.text((70, 258), "personal websites", font=f_sub, fill=GREY)
+    d.text((70, 32), "Lakshman Shanmugam", font=f_title, fill=DARK)
+    d.text((70, 164), "AI/ML Engineer", font=f_sub, fill=GREY)
+    d.text((70, 258), "LLMs, agentic workflows, and RAG", font=f_sub, fill=GREY)
 
     # separator
     d.line([70, 362, W - 70, 362], fill=(230, 230, 230), width=2)
 
     # content pills
-    pills = ["Publications", "Talks", "Teaching", "Portfolio", "CV"]
+    pills = ["Experience", "Publications", "Skills", "Resume"]
     x = 70
     y = 422
     for p_ in pills:
@@ -87,9 +74,9 @@ def main():
         x += fw + 18
 
     # footer domain chip
-    d.textlength("academicpages.github.io", font=f_domain)  # measure
+    d.textlength("lakshmans27.github.io", font=f_domain)  # measure
     d.rounded_rectangle([70, H - 92, 592, H - 44], 24, fill=DARK)
-    d.text((104, H - 84), "academicpages.github.io", font=f_domain, fill=(255, 255, 255))
+    d.text((104, H - 84), "lakshmans27.github.io", font=f_domain, fill=(255, 255, 255))
 
     out = os.path.join(REPO_ROOT, "images", "og-image.png")
     img.save(out, "PNG")

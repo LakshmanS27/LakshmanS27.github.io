@@ -1,0 +1,5 @@
+- **Languages:** Python, Java, R, SQL (MySQL, PostgreSQL), Dart
+- **Machine learning:** TensorFlow, PyTorch, Keras, NLTK, NumPy, Matplotlib, Scikit-learn, NLP, deep learning
+- **Generative AI:** LLMs, LangChain, LangGraph, RAG, agentic workflows
+- **Cloud and data tools:** Git, Docker, AWS, MongoDB, MS Excel
+- **Other tools and foundations:** Algorithms, Flutter, Power BI, Jupyter Notebooks
