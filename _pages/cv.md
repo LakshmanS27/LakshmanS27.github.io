@@ -37,4 +37,4 @@ AI/ML Engineer experienced in developing LLM-powered applications, agentic workf
 
 ## Contact
 
-[slakshman2004@gmail.com](mailto:slakshman2004@gmail.com) Â· [LinkedIn](https://www.linkedin.com/in/lakshman-shanmugam-00bb42267/) Â· [GitHub](https://github.com/LakshmanS27)
+[slakshman2004@gmail.com](mailto:slakshman2004@gmail.com) &middot; [LinkedIn](https://www.linkedin.com/in/lakshman-shanmugam-00bb42267/) &middot; [GitHub](https://github.com/LakshmanS27)
