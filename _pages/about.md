@@ -28,6 +28,6 @@ My two publications explore financial time-series forecasting with Temporally Ad
 
 ## Get in touch
 
-[Email](mailto:slakshman2004@gmail.com) Â· [LinkedIn](https://www.linkedin.com/in/lakshman-shanmugam-00bb42267/) Â· [GitHub](https://github.com/LakshmanS27)
+[Email](mailto:slakshman2004@gmail.com) &middot; [LinkedIn](https://www.linkedin.com/in/lakshman-shanmugam-00bb42267/) &middot; [GitHub](https://github.com/LakshmanS27)
 
-[View my resume]({{ '/cv/' | relative_url }}) Â· [Download resume (PDF)]({{ '/files/Lakshman_Resume_2026.pdf' | relative_url }})
+[View my resume]({{ '/cv/' | relative_url }}) &middot; [Download resume (PDF)]({{ '/files/Lakshman_Resume_2026.pdf' | relative_url }})

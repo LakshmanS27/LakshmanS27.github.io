@@ -16,6 +16,6 @@ Published in **Neural Computing and Applications**, Springer Nature, Volume 38, 
 
 Developed and implemented a novel **Temporally Adaptive Dropout LSTM (TAD-LSTM)** framework with six variants for enhanced financial time-series forecasting. The framework uses adaptive regularization to improve stock price prediction and generalization across NIFTY 50, NSE stocks, and AAPL datasets.
 
-Evaluation used MAE, RMSE, MAPE, and RÂ² metrics across multiple prediction horizons.
+Evaluation used MAE, RMSE, MAPE, and R&sup2; metrics across multiple prediction horizons.
 
 [View paper on Springer Nature](https://link.springer.com/article/10.1007/s00521-026-12065-4)
